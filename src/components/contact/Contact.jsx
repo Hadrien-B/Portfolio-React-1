@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './contact.css'
 import { MdOutlineEmail } from 'react-icons/md'
 import { RiMessengerLine, RiWhatsappLine } from 'react-icons/ri'
-import { useRef } from 'react'
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
@@ -47,7 +46,7 @@ const Contact = () => {
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
             <h5>Kalblitz</h5>
-            <a href="https://m.me/exemple" target="_blank">
+            <a href="https://m.me/exemple" target="_blank" rel="noreferrer">
               Send a message
             </a>
           </article>
@@ -58,6 +57,7 @@ const Contact = () => {
             <a
               href="https://api.whatsapp.com/send?phone=+330687551287"
               target="_blank"
+              rel="noreferrer"
             >
               Send a message
             </a>
